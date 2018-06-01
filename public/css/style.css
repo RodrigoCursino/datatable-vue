@@ -1,0 +1,505 @@
+body, html {
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+input {
+  border-radius: 0 !important;
+}
+
+#toTop {
+  width: 50px;
+  position: fixed;
+  right: 80px;
+  bottom: 80px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 100px;
+  border: 1px solid #be1b15;
+  background-color: #fff;
+  display: none;
+}
+
+#toTop span {
+  padding-top: 12px;
+  padding-bottom: 15px;
+  color: #be1b15;
+  font-size: 18px;
+}
+
+.navbar-default {
+  margin-bottom: 0;
+  border: none;
+  border-bottom: 3px solid #be1b15;
+}
+
+.navbar-default .navbar-nav li.active a {
+  background-color: #be1b15;
+  color: #fff;
+}
+
+.navbar-default .navbar-nav li a {
+  padding: 29px 10px 29px 10px;
+  font-family: 'Teko', sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  color: #000;
+}
+
+.navbar-header {
+  height: auto;
+}
+
+.navbar-header .navbar-brand {
+  height: auto;
+  padding: 10px 30px 10px 30px;
+  background-color: #be1b15 !important;
+  color: #fff !important;
+  font-family: 'Teko', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-right: 60px;
+}
+
+@media (max-width: 767px) {
+  .navbar-header .navbar-brand {
+    width: 100%;
+    padding: 10px;
+    font-size: 24px;
+    text-align: center;
+  }
+  .navbar-header .navbar-brand img {
+    margin-right: 10px !important;
+  }
+}
+
+.navbar-header .navbar-brand img {
+  display: inline-block;
+  width: 60px;
+  margin-right: 50px;
+}
+
+.jumbotron {
+  padding: 0;
+  background-color: #000;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.jumbotron a {
+  width: 100%;
+  position: relative;
+  height: 100%;
+  float: left;
+}
+
+.jumbotron .desafio {
+  position: absolute;
+  right: 120px;
+  margin-top: 120px;
+}
+
+@media (max-width: 767px) {
+  .jumbotron .desafio {
+    position: relative;
+    right: initial;
+    margin: 10px auto;
+    width: 75%;
+    display: block;
+  }
+}
+
+.jumbotron#parallax-effect {
+  display: block;
+  height: 500px;
+  background-image: url(../images/banner.png);
+  background-attachment: fixed;
+  background-position: center 82px;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 767px) {
+  .jumbotron#parallax-effect {
+    height: 200px;
+    background-color: #000;
+    background-image: none;
+  }
+}
+
+h1.title {
+  font-family: 'Teko', sans-serif;
+  font-size: 5rem;
+  font-weight: 300;
+  color: #000;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.btn-jogar {
+  background-color: #be1b15;
+  color: #fff;
+  font-family: 'Teko', sans-serif;
+  font-weight: 300;
+  font-size: 60px;
+  border-radius: 0;
+  border: 1px solid #fff;
+  display: inline-block;
+  margin-top: -80px;
+  padding: 2px 30px;
+}
+
+@media (max-width: 767px) {
+  .btn-jogar {
+    margin-top: 10px;
+  }
+}
+
+.btn-jogar.inverse {
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #be1b15;
+}
+
+.liga {
+  height: 450px;
+  background-attachment: fixed;
+  background-image: url(../images/fundo_liga.png);
+  background-size: cover;
+  padding-top: 80px;
+}
+
+@media (max-width: 767px) {
+  .liga {
+    padding-top: 40px;
+    height: auto;
+  }
+}
+
+.liga p {
+  font-family: 'SinkinSans-400Regular', sans-serif;
+  font-size: 1.5rem;
+  color: #323232;
+  text-align: center;
+}
+
+.formato {
+  min-height: 650px;
+  background-attachment: fixed;
+  background-image: url(../images/img-fundo-formato.png);
+  background-size: cover;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 767px) {
+  .formato {
+    padding-top: 40px;
+    height: auto;
+  }
+}
+
+.formato .title {
+  color: #fff;
+}
+
+.formato img {
+  margin: 0 auto;
+}
+
+.formato p {
+  font-family: 'SinkinSans-400Regular', sans-serif;
+  font-size: 1.5rem;
+  color: #cfcfcf;
+  text-align: center;
+}
+
+.proposta {
+  min-height: 650px;
+  background-attachment: fixed;
+  background-image: url(../images/img-fundo-proposta.png);
+  background-size: cover;
+  background-position: -110px 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 767px) {
+  .proposta {
+    padding-top: 40px;
+    height: auto;
+  }
+}
+
+.proposta .title {
+  color: #fff;
+}
+
+.proposta ul {
+  margin-top: 50px;
+}
+
+.proposta ul li {
+  font-family: 'SinkinSans-400Regular', sans-serif;
+  font-size: 1.5rem;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.proposta ul li span {
+  color: #fff;
+}
+
+.proposta .btn-jogar {
+  margin-top: 45%;
+}
+
+.patrocinador {
+  min-height: 650px;
+  background-attachment: fixed;
+  background-image: url(../images/img-fundo-patrocinador.png);
+  background-size: cover;
+  background-position: 0px 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 767px) {
+  .patrocinador {
+    padding-top: 40px;
+    height: auto;
+  }
+}
+
+.patrocinador .title {
+  color: #fff;
+}
+
+.patrocinador p {
+  color: #cfcfcf;
+}
+
+.patrocinador .media .media-left {
+  font-size: 120px;
+  font-family: 'Teko', sans-serif;
+  font-weight: bold;
+  vertical-align: middle;
+  line-height: 70px;
+  margin-bottom: 0;
+  padding-top: 28px;
+}
+
+@media (max-width: 767px) {
+  .patrocinador .media .media-left {
+    font-size: 80px;
+  }
+}
+
+.patrocinador .media .media-left p {
+  color: #fff !important;
+}
+
+.patrocinador .media .media-body {
+  line-height: 15px;
+  padding-bottom: 0;
+  vertical-align: middle;
+}
+
+.patrocinador .media .media-body .media-heading {
+  font-family: 'Teko', sans-serif;
+  font-weight: bold;
+  color: #fff;
+  font-size: 38px;
+}
+
+@media (max-width: 767px) {
+  .patrocinador .media .media-body .media-heading {
+    font-size: 34px;
+    margin-top: 12px;
+  }
+}
+
+.patrocinador .media .media-body p {
+  font-family: 'Teko', sans-serif;
+  font-weight: 300;
+  color: #fff !important;
+  font-size: 40px;
+}
+
+@media (max-width: 767px) {
+  .patrocinador .media .media-body p {
+    font-size: 24px;
+  }
+}
+
+.patrocinador .btn-jogar {
+  margin-top: 45%;
+}
+
+.contato {
+  min-height: 650px;
+  background-attachment: fixed;
+  background-image: url(../images/img-fundo-contato.png);
+  background-size: cover;
+  background-position: 0 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 767px) {
+  .contato {
+    padding-top: 40px;
+    height: auto;
+  }
+}
+
+.contato .title {
+  color: #fff;
+}
+
+.contato .btn-enviar {
+  background-color: #000;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 0;
+  padding: 6px 22px;
+}
+
+.contato .btn-enviar:hover, .contato .btn-enviar:active, .contato .btn-enviar:active:hover, .contato .btn-enviar:focus:hover {
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #000;
+}
+
+.contato textarea {
+  resize: none;
+}
+
+.ficha {
+  min-height: 650px;
+  background-attachment: fixed;
+  background-image: url(../images/img-fundo-ficha.png);
+  background-size: cover;
+  background-position: 0 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.ficha .title {
+  color: #fff;
+}
+
+.ficha p {
+  color: #fff;
+}
+
+.ficha .form {
+  margin-top: 40px;
+}
+
+.categorias {
+  min-height: 450px;
+  background-attachment: fixed;
+  background-image: url(../images/fundo_liga.png);
+  background-size: cover;
+  background-position: 0 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.categorias .title {
+  color: #000;
+}
+
+.categorias p {
+  font-family: 'Teko', sans-serif;
+  font-size: 2.5rem;
+  color: #000;
+}
+
+.categorias .form {
+  margin-top: 40px;
+}
+
+.categorias .form .checkbox {
+  text-align: center;
+  font-family: 'SinkinSans-400Regular', sans-serif;
+  font-size: 1.2rem;
+  color: #000;
+  margin-bottom: 35px;
+}
+
+.categorias .form input[type="checkbox"] {
+  border: 1px solid #000;
+}
+
+::-webkit-input-placeholder {
+  color: #000 !important;
+  text-align: center;
+  font-family: 'Teko', sans-serif;
+  font-size: 18px;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #000 !important;
+  text-align: center;
+  font-family: 'Teko', sans-serif;
+  font-size: 18px;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #000 !important;
+  text-align: center;
+  font-family: 'Teko', sans-serif;
+  font-size: 18px;
+}
+
+:-ms-input-placeholder {
+  color: #000 !important;
+  text-align: center;
+  font-family: 'Teko', sans-serif;
+  font-size: 18px;
+}
+
+.naoCep {
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+.inscricao {
+  min-height: 450px;
+  background-attachment: fixed;
+  background-image: url(../images/img-fundo-categorias.png);
+  background-size: cover;
+  background-position: 0 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.inscricao input[type="checkbox"] + span {
+  color: #fff;
+}
+
+.inscricao .btn-enviar {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 30px;
+  border-radius: 0;
+}
+
+footer {
+  background-image: url(../images/img-fundo-footer.png);
+  background-attachment: fixed;
+  height: 150px;
+  padding-top: 75px;
+}
+
+footer .logo-footer {
+  width: 80px;
+  vertical-align: middle;
+  display: inline-block;
+  margin-left: 10px;
+}

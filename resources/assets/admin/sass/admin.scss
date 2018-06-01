@@ -1,0 +1,63 @@
+.btn-primary{
+  background-color: #d54e21;
+  border: 1px solid darken(#d54e21, 2);
+  &:hover{
+    background-color: #fff;
+    border: 1px solid #d54e21;
+    color: #d54e21;
+  }
+}
+
+.btn-link{
+  color: #d54e21!important;
+  text-decoration: none!important;
+}
+
+.login-page{
+  background-image: url(../../../assets/images/logo_tmontec.png);
+  background-size: cover;
+  background-color: transparent;
+  .rights{
+    position: absolute;
+    right: 30px;
+    text-align: right;
+    bottom: 10px;
+    p{
+      color: #fff;
+    }
+    .top_tmontec{
+      img{
+        width: 80px;
+      }
+    }
+  }
+
+  .login-box{
+    .login-logo{
+      a{
+        color: #fff;
+      }
+    }
+  }
+}
+
+
+// painel
+
+.logo-lg{
+  max-height: 100%;
+  img{
+    max-height:100%;
+    margin: 0 auto;
+  }
+}
+
+.crm-style {
+  background-color: #962b23 !important;
+  color:white !important;  
+}
+
+.crm-image {
+  height: 45px;
+  padding-top: 5px;
+}

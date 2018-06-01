@@ -1,0 +1,466 @@
+body, html{
+  transition: all 0.2s linear;
+}
+
+input{
+  border-radius: 0!important;
+}
+
+#toTop{
+  width: 50px;
+  position: fixed;
+  right: 80px;
+  bottom: 80px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 100px;
+  border: 1px solid #be1b15;
+  background-color: #fff;
+  display: none;
+  span{
+    padding-top: 12px;
+    padding-bottom: 15px;
+    color: #be1b15;
+    font-size: 18px;
+  }
+}
+
+.navbar-default{
+  margin-bottom: 0;
+  border:none;
+  border-bottom: 3px solid #be1b15;
+  .navbar-nav{
+    li{
+      &.active{
+        a{
+          background-color: #be1b15;
+          color: #fff;
+        }
+      }
+      a{
+        padding: 29px 10px 29px 10px;
+        font-family: 'Teko', sans-serif;
+        font-weight: 500;
+        font-size: 30px;
+        color: #000;
+      }
+    }
+  }
+}
+
+.navbar-header{
+  height: auto;
+
+  .navbar-brand{
+    @media(max-width: 767px){
+      width: 100%;
+      padding: 10px;
+      font-size: 24px;
+      text-align: center;
+      img{
+        margin-right: 10px!important;
+      }
+    }
+    height: auto;
+    padding: 10px 30px 10px 30px;
+    background-color: #be1b15!important;
+    color: #fff!important;
+    font-family: 'Teko', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 60px;
+    img{
+      display: inline-block;
+      width: 60px;
+      margin-right: 50px;
+    }
+  }
+}
+
+.jumbotron{
+  padding: 0;
+  background-color: #000;
+  margin-bottom: 0;
+  position: relative;
+  a{
+    width: 100%;
+    position: relative;
+    height: 100%;
+    float: left;
+  }
+
+  .desafio{
+    position: absolute;
+    right: 120px;
+    margin-top: 120px;
+    @media(max-width: 767px){
+      position: relative;
+      right: initial;
+      margin: 10px auto;
+      width: 75%;
+      display: block;
+    }
+  }
+
+  &#parallax-effect{
+    @media(max-width: 767px){
+      height: 200px;
+      background-color: #000;
+      background-image: none;
+    }
+    display: block;
+    height: 500px;
+    background-image: url(../images/banner.png);
+    background-attachment: fixed;
+    background-position: center 82px;
+    background-repeat: no-repeat;
+  }
+}
+
+
+h1{
+  &.title{
+    font-family: 'Teko', sans-serif;
+    font-size: 5rem;
+    font-weight: 300;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+}
+
+.btn-jogar{
+
+  @media(max-width: 767px){
+    margin-top: 10px;
+  }
+
+  background-color: #be1b15;
+  color: #fff;
+  font-family: 'Teko', sans-serif;
+  font-weight: 300;
+  font-size: 60px;
+  border-radius: 0;
+  border: 1px solid #fff;
+  display: inline-block;
+  margin-top: -80px;
+  padding: 2px 30px;
+  &.inverse{
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #be1b15;
+  }
+}
+
+.liga{
+  @media(max-width: 767px){
+    padding-top: 40px;
+    height: auto;
+  }
+
+  height: 450px;
+  background-attachment: fixed;
+  background-image: url(../images/fundo_liga.png);
+  background-size: cover;
+  padding-top: 80px;
+  p{
+    font-family: 'SinkinSans-400Regular', sans-serif;
+    font-size: 1.5rem;
+    color: #323232;
+    text-align: center;
+  }
+}
+
+// formato da liga
+
+.formato{
+  min-height: 650px;
+  background-attachment: fixed;
+  background-image: url(../images/img-fundo-formato.png);
+  background-size: cover;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  @media(max-width: 767px){
+    padding-top: 40px;
+    height: auto;
+  }
+
+
+  .title{
+    color: #fff;
+  }
+  img{
+    margin: 0 auto;
+  }
+  p{
+    font-family: 'SinkinSans-400Regular', sans-serif;
+    font-size: 1.5rem;
+    color: #cfcfcf;
+    text-align: center;
+  }
+}
+
+.proposta{
+  min-height: 650px;
+  background-attachment: fixed;
+  background-image: url(../images/img-fundo-proposta.png);
+  background-size: cover;
+  background-position: -110px 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  @media(max-width: 767px){
+    padding-top: 40px;
+    height: auto;
+  }
+  .title{
+    color: #fff;
+  }
+
+  ul{
+    margin-top: 50px;
+    li{
+      font-family: 'SinkinSans-400Regular', sans-serif;
+      font-size: 1.5rem;
+      color: #000;
+      margin-bottom: 20px;
+      span{
+        color: #fff;
+      }
+    }
+  }
+
+  .btn-jogar{
+    margin-top: 45%;
+  }
+}
+
+.patrocinador{
+
+  min-height: 650px;
+  background-attachment: fixed;
+  background-image: url(../images/img-fundo-patrocinador.png);
+  background-size: cover;
+  background-position: 0px 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  @media(max-width: 767px){
+    padding-top: 40px;
+    height: auto;
+  }
+  .title{
+    color: #fff;
+  }
+
+  p{
+    color: #cfcfcf;
+  }
+
+  .media{
+    .media-left{
+      @media(max-width: 767px){
+        font-size: 80px;
+      }
+      font-size: 120px;
+      font-family: 'Teko', sans-serif;
+      font-weight: bold;
+      vertical-align: middle;
+      line-height: 70px;
+      margin-bottom: 0;
+      padding-top: 28px;
+      p{
+        color: #fff!important;
+      }
+    }
+    .media-body{
+      line-height: 15px;
+      padding-bottom: 0;
+      vertical-align: middle;
+      .media-heading{
+        font-family: 'Teko', sans-serif;
+        font-weight: bold;
+        color: #fff;
+        font-size: 38px;
+        @media(max-width: 767px){
+          font-size: 34px;
+          margin-top: 12px;
+        }
+      }
+      p{
+        font-family: 'Teko', sans-serif;
+        font-weight: 300;
+        color: #fff!important;
+        font-size: 40px;
+        @media(max-width: 767px){
+          font-size: 24px;
+        }
+      }
+    }
+  }
+
+  .btn-jogar{
+    margin-top: 45%;
+  }
+}
+
+.contato {
+  min-height: 650px;
+  background-attachment: fixed;
+  background-image: url(../images/img-fundo-contato.png);
+  background-size: cover;
+  background-position: 0 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  @media(max-width: 767px){
+    padding-top: 40px;
+    height: auto;
+  }
+  .title{
+    color: #fff;
+  }
+
+  .btn-enviar{
+    background-color: #000;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius:0;
+    padding: 6px 22px;
+    &:hover, &:active, &:active:hover, &:focus:hover{
+      background-color: #fff;
+      border: 1px solid #000;
+      color: #000;
+    }
+  }
+  textarea{
+    resize: none;
+  }
+}
+
+.ficha{
+  min-height: 650px;
+  background-attachment: fixed;
+  background-image: url(../images/img-fundo-ficha.png);
+  background-size: cover;
+  background-position: 0 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  .title{
+    color: #fff;
+  }
+
+  p{
+    color: #fff;
+  }
+
+  .form{
+    margin-top: 40px;
+  }
+}
+
+.categorias{
+   min-height: 450px;
+   background-attachment: fixed;
+   background-image: url(../images/fundo_liga.png);
+   background-size: cover;
+   background-position: 0 0;
+   padding-top: 50px;
+   padding-bottom: 50px;
+   .title{
+     color: #000;
+   }
+
+    p{
+      font-family: 'Teko', sans-serif;
+      font-size: 2.5rem;
+      color: #000;
+    }
+
+   .form{
+     margin-top: 40px;
+
+     .checkbox{
+       text-align: center;
+       font-family: 'SinkinSans-400Regular', sans-serif;
+       font-size: 1.2rem;
+       color: #000;
+       margin-bottom: 35px;
+     }
+
+     input[type="checkbox"]{
+       border: 1px solid #000;
+     }
+   }
+ }
+
+
+::-webkit-input-placeholder {
+  color: #000!important;
+  text-align: center;
+  font-family: 'Teko', sans-serif;
+  font-size: 18px;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: #000!important;
+  text-align: center;
+  font-family: 'Teko', sans-serif;
+  font-size: 18px;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  color: #000!important;
+  text-align: center;
+  font-family: 'Teko', sans-serif;
+  font-size: 18px;
+}
+
+:-ms-input-placeholder {
+  color: #000!important;
+  text-align: center;
+  font-family: 'Teko', sans-serif;
+  font-size: 18px;
+}
+
+.naoCep{
+  color: #fff!important;
+  text-decoration: none!important;
+}
+
+.inscricao{
+  min-height: 450px;
+  background-attachment: fixed;
+  background-image: url(../images/img-fundo-categorias.png);
+  background-size: cover;
+  background-position: 0 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  input[type="checkbox"]{
+    &+span{
+      color: #fff;
+    }
+  }
+
+  .btn-enviar{
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 30px;
+    border-radius: 0;
+  }
+}
+
+footer{
+  background-image: url(../images/img-fundo-footer.png);
+  background-attachment: fixed;
+  height: 150px;
+  padding-top: 75px;
+
+  .logo-footer{
+    width: 80px;
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 10px;
+  }
+}
